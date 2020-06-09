@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #cde9f5;
+}
+body.amped{
+    background-color: #fff759;
+}
+input.checkbox{
+    opacity: 0;
+    position: absolute;
+    left: 96%;
+}
+nav{
+    display: flex;
+    font-size: 1.2em;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #4b2866;
+    margin-top: 1%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+.nav-links li{
+    list-style: none;
+    align-items: right;
+}
+.nav-links a{
+    color: #94cbe3;
+    text-decoration: none;
+}
+
+
+/* Button for display color switch */
+
+.header{
+    display: flex;
+    margin-right: 1%;
+}
+.logo-head{
+    position: relative;
+    left: -22%;
+}
+.logo{
+    width: 300px;
+}
+.header span{
+    position: relative;
+    color: #94cbe3;
+    margin-left: 20px;
+    font-size: 12px;
+    bottom: 14px;
+    right: 8px;
+    user-select: none;
+}
+.toggle {
+    background-color: #94cbe3;
+    display:flex;
+    height: 29px;
+    width: 50px;
+    /* align-items: center; */
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    top: -20px;
+    transition: transform 0.25s;
+    user-select: none;
+}
+.ampedIcon{
+    height: 28px;
+    width: 28px;
+    margin: 0;
+    position: relative;
+    bottom: 3px;
+}
+.lowkeyIcon{
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    position: relative;
+    bottom: 4px;
+    left: -3px;
+}
+.ball {
+    background-color: #9e76c4;
+    position: absolute;
+    top: 2.25px;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transition: transform 0.25s linear;
+}
+.checkbox:checked + label{
+    background-color: #f7edad;
+}
+.checkbox:checked + label .ball{
+    transform: translateX(22px);
+}
+
+.amped{
+    text-transform: uppercase;
+}
+.amped a{
+    color: #f7edad;
+}
+.amped span{
+    color: #f7edad;
+}
+
+.hello p{
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    width: 15%;
+    color: #9e76c4;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+.main-photo{
+    height: 600px;
+    margin-right: 0px;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+}
